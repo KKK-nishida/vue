@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+
+    </title>
+  </head>
+  <body>
+    <div id="disp-count">0</div>
+      <button  id="up">+1</button>
+      <button  id="down">-1</button>
+
+  <script type="text/javascript">
+    var disp_count = document.getElementById("disp-count");
+    var up = document.getElementById("up");
+    var down = document.getElementById("down");
+    var count = 0;
+
+    up.addEventListener('click',function(){
+      count += 1;
+      disp_count.innerHTML = count;
+    })
+    down.addEventListener('click',function(){
+      count -= 1;
+      disp_count.innerHTML = count;
+    })
+  </script>
+
+  </body>
+</html>
